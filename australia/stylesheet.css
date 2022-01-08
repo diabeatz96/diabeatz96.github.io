@@ -23,6 +23,24 @@ p {
     filter: drop-shadow(3px 1px 1px black);
 }
 
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    margin: auto;
+    padding: 0px 28px;
+    text-decoration: none;
+    color: #F2E7AE;
+}
+
+footer a:hover {
+    color: #F2AC29;
+    background-color: #ff0000;
+    text-decoration: underline;
+}
+
 h2 {
     border: 5px  solid #ff0000;
     background-color: #ff2600;
@@ -67,7 +85,7 @@ img {
 }
 
 #intro {
-    width: 85%;
+    width: 80%;
     border: 15px solid darkred;
     padding: 50px;
     margin: 120px;
@@ -146,4 +164,18 @@ table.priceTable tfoot .links a{
 .space {
     display: flex;
     justify-content: space-between;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33%;
+    padding: 1px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
