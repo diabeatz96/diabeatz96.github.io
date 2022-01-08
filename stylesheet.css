@@ -1,9 +1,7 @@
-<!-- Element Selectors -->
-
 header {
     background-color: #402722;
-    max-width: 700px;
-    height: 200px;
+    max-width: 1200px;
+    height: 30px;
 }
 
 nav {
@@ -13,7 +11,7 @@ nav {
 }
 
 header a {
-    margin: 30px;
+    margin: 80px;
     padding: 0px 28px;
     text-decoration: none;
     color: #F2E7AE;
@@ -27,13 +25,24 @@ header a:hover {
 
 body {
     background-color: #D97A43;
-    max-width: 700px;
+    max-width: 1200px;
+    height: auto;
     margin: auto;
 }
 
+img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 60%;
+    height: 60%;
+    border: 5px solid red;
+    border-radius: 5%;
+}
+
+
 footer {
     background-color: #402722;
-    max-width: 700px;
+    max-width: 1200px;
     height: 40px;
     margin: auto;
 }
@@ -43,17 +52,15 @@ html {
 }
 
 div {
-    display: inline;
 }
 
-<!-- ID Selectors -->
 
 .round {
     border: 1px solid rebeccapurple;
     background-color: orangered;
     padding-left: 2px;
     margin-left: 375px;
-    width: 300px;
+    width: 200px;
     height: 30px
 }
 
@@ -61,39 +68,60 @@ div {
     border: 1px solid rebeccapurple;
     background-color: orangered;
     padding-left: 2px;
-    margin-left: 375px;
-    width: 300px;
-    height: 30px
+    margin-left: 940px;
+    width: 250px;
+    height: 30px;
 }
 
 #text2 {
     border: 1px solid rebeccapurple;
     background-color: orangered;
     padding-left: 2px;
-    margin-left: 375px;
-    width: 300px;
-    height: 30px
+    margin-left: 940px;
+    width: 250px;
+    height: 30px;
 }
 
 #text3 {
     border: 1px solid rebeccapurple;
     background-color: orangered;
     padding-left: 2px;
-    margin-left: 375px;
-    width: 300px;
-    height: 40px
+    margin-left: 940px;
+    width: 250px;
+    height: 30px;
 }
 
 #assignment {
-    margin-left: 200px;
+    margin-left: 360px;
     align-items: center;
 }
 
 #button1 {
     padding-left: 2px;
-    margin-left: 475px;
+    margin-bottom: 300px;
     background-color: #402722;
     color: white;
 }
-<!-- Class Selectors -->
 
+#textboxes {
+    clear:left;
+    display: inline;
+}
+
+#foottext {
+    color: white;
+}
+
+#picture {
+float: left;
+}
+
+.container .image {
+    width: 50%;
+    float: left;
+}
+
+.container img {
+    width: calc(100% - (20px * 2));
+    margin: 20px;
+}
