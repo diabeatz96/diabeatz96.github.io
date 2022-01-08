@@ -1,0 +1,149 @@
+html {
+    background-image: linear-gradient(darkred, darkgoldenrod);
+}
+
+h1 {
+    text-align: center;
+    border: 10px solid orange;
+    text-decoration: underline white;
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: #444444;
+    background: #FFFFFF;
+}
+
+body {
+    font-family: 'Prompt', serif;
+}
+
+p {
+    line-height: 2;
+    color: white;
+    filter: drop-shadow(3px 1px 1px black);
+}
+
+h2 {
+    border: 5px  solid #ff0000;
+    background-color: #ff2600;
+    width: 500px;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 40px;
+    margin: auto;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+ul {
+    display: table;
+    margin: 0 auto;
+}
+
+figure {
+    float:left;
+    padding: 5px;
+    margin: auto;
+}
+
+figcaption {
+    color: #fff;
+    font: italic smaller sans-serif;
+    text-align-last: left;
+}
+
+section {
+    text-align: center;
+}
+img {
+    border: darkred solid 15px;
+    caption-side: bottom;
+
+}
+
+#intro {
+    width: 85%;
+    border: 15px solid darkred;
+    padding: 50px;
+    margin: 120px;
+    background-image: linear-gradient(darkorange, sienna);
+    filter: drop-shadow(30px 10px 30px #e31919);
+}
+
+
+#toptext {
+    text-align: center;
+    color: white;
+}
+
+#textleft {
+    color: white;
+    float: left;
+    overflow-wrap: break-word;
+}
+#image1 {
+    float:left;
+}
+
+#textblock1 {
+    color: white;
+}
+
+
+#image2 {
+    padding-left: 30%;
+}
+
+table.priceTable {
+    border: 2px solid #A40808;
+    background-color: #EEE7DB;
+    width: 100%;
+    text-align: center;
+}
+table.priceTable td, table.priceTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+}
+table.priceTable tbody td {
+    font-size: 13px;
+}
+table.priceTable tr:nth-child(even) {
+    background: #F5C8BF;
+}
+table.priceTable thead {
+    background: #A40808;
+}
+table.priceTable thead th {
+    font-size: 19px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #A40808;
+}
+table.priceTable thead th:first-child {
+    border-left: none;
+}
+
+table.priceTable tfoot td {
+    font-size: 13px;
+}
+table.priceTable tfoot .links {
+    text-align: right;
+}
+table.priceTable tfoot .links a{
+    display: inline-block;
+    background: #FFFFFF;
+    color: #A40808;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.space {
+    display: flex;
+    justify-content: space-between;
+}
