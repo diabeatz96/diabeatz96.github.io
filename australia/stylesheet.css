@@ -30,7 +30,8 @@ footer {
 
 footer a {
     margin: auto;
-    padding: 0px 28px;
+    font-size: 30px;
+    padding: 0 28px;
     text-decoration: none;
     color: #F2E7AE;
 }
@@ -52,6 +53,18 @@ h2 {
     padding-bottom: 10px;
     text-decoration: underline;
     color: white;
+}
+
+dl dd a{
+    color: white;
+}
+
+dl dd a:hover{
+    color: pink;
+    text-decoration: underline black;
+}
+dl dd a:active{
+    color: cyan;
 }
 
 h3 {
@@ -78,6 +91,7 @@ figcaption {
 section {
     text-align: center;
 }
+
 img {
     border: darkred solid 15px;
     caption-side: bottom;
@@ -117,6 +131,14 @@ img {
     padding-left: 30%;
 }
 
+#middlebox {
+    background-color: orangered;
+    width: 80%;
+    margin: auto;
+    border: 8px solid orange;
+    overflow: auto;
+    font-size: 18px;
+}
 table.priceTable {
     border: 2px solid #A40808;
     background-color: #EEE7DB;
