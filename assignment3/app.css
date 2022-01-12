@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Caveat Brush', cursive;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+html {
+    min-height: 100%;
+    width: 100%;
+    height: 100%; /* NEW */
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/df/11/4b/df114b3d71633397af7fe979a8ec2728.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    height: 100%;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+.main-area {
+    display: flex;
+    font-size: 50px;
+    justify-content: flex-end;
+}
+
+
+.main-area .box {
+    width: 20em;
+    height: 5em;
+    margin: 100px;
+    border-radius: 0.3em;
+    border: solid 5px #ff5c34;
+    align-self: flex-end;
+    background-color: rgba(55, 76, 140, 0.8);
+    transition: all 0.5s ease-in-out;
+}
+
+.main-area .box:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 1em 0.7em -0.4em #f69d3c;
+    transform: translateY(-0.25em);
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #D95323;
+    font-size: 2em;
+    text-shadow:
+            -1px -1px 1px #ffffff,
+            1px -1px 1px #ffffff,
+            -1px 1px 1px #ffffff,
+            1px 1px 1px #ffffff;
+}
+
+a:hover {
+    color: rgba(55, 76, 140, 0.8);
+}
+
+@media (max-width: 1000px) {
+    .main-area {
+        justify-content: center;
+    }
+
+    .main-area .box {
+        align-self: center;
+        width: 20em;
+        height: 5em;
+    }
+
+}
+
+
+
+
