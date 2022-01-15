@@ -1,0 +1,170 @@
+html {
+    font-family: 'Creepster', cursive;
+}
+
+body {
+
+    background-color: #161a1d;
+}
+
+
+h1{
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    font-size: 5em;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    font-size: 2em;
+    color: white;
+}
+
+.button {
+    color: black;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 2px orange solid;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.groupbox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.box1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #660708;
+    width: 30%;
+    height: 50%;
+    margin-top: 5em;
+}
+
+
+
+.box2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #660708;
+    width: 30%;
+    height: 50%;
+    margin-top: 5em;
+}
+
+.box1 img {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.box2 img {
+    width: 60%;
+    height: 60%;
+    margin: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.md1Body {
+    background-color: white;
+    margin: 10px;
+}
+
+.groupbox p {
+    margin-top: 5em;
+    text-align: center;
+    color: white;
+}
+
+.close {
+    color: black;
+    width: auto;
+    height: auto;
+    margin: auto;
+    background-color: white;
+    border: 2px orange solid;
+    text-decoration: none;
+    padding: 2px;
+}
+
+.activate {
+    color: black;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border: 2px orange solid;
+    text-decoration: none;
+    position: fixed;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    pointer-events: none;
+}
+
+.activate:target {
+    display: block;
+    pointer-events: auto;
+}
+
+
+
+.mtopbox {
+    background-color: crimson;
+}
+
+.mfooter {
+    background-color: none;
+    width: auto;
+    height: auto;
+}
+
+.scarybutton {
+    background-color: crimson; /* Green */
+    border: 4px solid white;
+    color: white;
+    padding: 10px 20px;
+    width: 40%;
+    height: 10%;
+    border-radius: 4em;
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+}
+
+.imagecenter {
+    display: flex;
+    justify-content: center;
+}
+
+.imagecenter img {
+    width: 20%;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Creepster', cursive;
+}
+
+.groupbox p, .activate p {
+    font-family: 'Creepster', cursive;
+    font-size: 2em;
+
+}
+
+.red {
+    color: crimson;
+    font-size: 3em;
+}
