@@ -1,0 +1,662 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* HTML TEXT UPDATE FOR PAGE*/
+html {
+    font-family: 'Rubik', sans-serif;
+}
+
+/*HEADER FILE ORGANIZATION
+COLOR PALETTE https://coolors.co/006466-065a60-0b525b-144552-1b3a4b-212f45-272640-312244-3e1f47-4d194d
+*/
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-image: url("https://i.gifer.com/UniY.gif");
+    background-position: center;
+}
+
+header img {
+    width: 50%;
+    padding-left: 2em;
+    animation: flicker 2s linear  reverse infinite;
+
+
+}
+
+header .logo {
+}
+
+
+header h1 {
+    font-size: 5em;
+    font-weight: bolder;
+    align-self: center;
+    color: white;
+    text-shadow: 4px 4px mediumpurple;
+    animation: linear 2s infinite textcolor;
+}
+
+
+header h2 {
+    color: white;
+    font-size: 3em;
+    padding-left: 20em;
+}
+
+header .topbar {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+
+header .topbar div {
+    width: 15em;
+    font-size: 20px;
+}
+
+
+header .topbar a {
+    text-decoration: none;
+    color: white;
+    width: 15em;
+    font-size: 1em;
+}
+
+
+header .topbar a:hover {
+    text-decoration: underline;
+
+}
+
+/* Header End */
+
+
+/* First Section */
+
+
+
+.section1 {
+    background-image: linear-gradient(to right, #272640, #065A60);
+    height: 3em;
+}
+
+
+.section1 h3 {
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#redtext {
+    font-weight: 800;
+    text-shadow: 2px 2px 6px crimson;
+}
+
+
+/* slider begin */
+
+.textbox1 {
+    object-fit: fill;
+    width: 70%;
+    margin: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.section2 {
+    background-image: url("https://media1.giphy.com/media/AtK6cr1n21uY8/giphy.gif");
+    background-size: cover;
+
+}
+
+figure.slider {
+    position: relative;
+    width: 500%;
+    font-size: 0;
+    animation: 30s slideshow infinite;
+    object-fit: cover;
+}
+
+
+figure.slider figure {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    position: inherit;
+    object-fit: fill;
+}
+
+figure.slider img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+
+figure.slider figure figcaption {
+    position: absolute;
+    bottom: 50%;
+    background: rgba(0,0,0,0.4);
+    color: #fff; width: 100%;
+    font-size: 2rem; padding: .6rem;
+}
+
+.infobox {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin-top: 4em;
+}
+
+.infobox .deal1 {
+    background-image: url("https://bloximages.newyork1.vip.townnews.com/chronicleonline.com/content/tncms/assets/v3/editorial/e/44/e4498d02-abb6-11e8-b402-4b5f8adf8b1c/5b86e1fc395d6.image.jpg?resize=1200%2C1551");
+    background-size: cover;
+    width: 40%;
+    height: 40rem;
+    border: 1em solid white;
+}
+
+
+
+.infobox .deal2 {
+    background-image: linear-gradient(to bottom, #065A60, #272640);
+    width: 40%;
+    height: 40rem;
+    border: 1em solid white;
+}
+
+
+.deal1 div {
+
+    width: 30%;
+    height: 20%;
+    margin-top: 40%;
+    margin-left: 30%;
+    padding-left: 10%;
+    background-color: rgba(0, 0 , 0, 0.3);
+    border: 2px white solid;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+}
+
+.deal1 div p {
+    color: white;
+    text-shadow: 2px 2px #00A0A3;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 25%;
+    margin-right: 30%;
+}
+
+
+.deal2 div h2 {
+    color: white;
+    text-shadow: 2px 2px #00A0A3;
+    text-align: center;
+    font-size: 3em;
+}
+.deal2 div p {
+    color: white;
+    text-shadow: 2px 2px #00A0A3;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10%;
+    margin-right: 0;
+}
+/* Slider End */
+
+/* BEGIN MODAL */
+
+.button {
+    appearance: none;
+    background: #00A0A3;
+    border-radius: 0.25em;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    height: 3em;
+    line-height: 3em;
+    padding: 0 1em;
+}
+
+/* MODAl PART 1 FINESSE */
+
+.todaydeals {
+    background-image: url("https://thumbs.gfycat.com/ContentJitteryCats-size_restricted.gif");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.todaydeals h2 {
+    padding-top: 2%;
+    font-size: 5em;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 0.4em;
+    border-bottom: #1B3A4B 2px solid;
+
+}
+
+.caption {
+    color: white;
+    font-style: italic;
+}
+
+.cardtitle {
+    color: white;
+    font-size: 2em;
+    padding: 0.5em;
+    text-decoration: underline;
+}
+
+.cardpicture {
+    width: 50%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.description {
+    color: white;
+    padding: 0.8rem;
+}
+
+.price {
+
+    font-size: 2em;
+
+}
+
+.todaydeals #salad {
+    width: 25%;
+    height: 30em;
+    background-color: crimson;
+    margin-top: 5%;
+    border: 1rem white solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.todaydeals #cheesesteak {
+    width: 25%;
+    height: 30em;
+    background-color: crimson;
+    margin-top: 10%;
+    border: 1rem white solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+
+.todaydeals #blt {
+    width: 25%;
+    height: 30em;
+    background-color: crimson;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    border: 1rem white solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+  /* MODAL PART 1 END */
+
+ /* MODAL PART 2 */
+
+.Sandwiches h2 {
+    padding-top: 2%;
+    font-size: 5em;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 0.4em;
+    border-bottom: #00A0A3 2px solid;
+
+}
+
+.Sandwiches {
+    background-image: url("https://thumbs.gfycat.com/ContentJitteryCats-size_restricted.gif");
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.Sandwiches #meatball {
+    width: 25%;
+    height: 30em;
+    background-color: crimson;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    border: 1rem white solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.Sandwiches #bec {
+    width: 25%;
+    height: 30em;
+    background-color: crimson;
+    margin-top: 10%;
+    border: 1rem white solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.Sandwiches #reuben {
+    width: 25%;
+    height: 30em;
+    background-color: crimson;
+    margin-top: 5%;
+    border: 1rem white solid;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+ /* Footer Starts Here */
+
+.bg {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+}
+footer {
+    background-color: black;
+    opacity: 0.8;
+    width: 100%;
+    height: 10em;
+    text-align: center;
+}
+
+footer p {
+
+    padding-top: 1rem;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    color: white;
+    background-color: white;
+}
+
+.toprow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.middlerow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.middlerow img{
+    width: 10%;
+}
+
+.middlerow div {
+    width: auto;
+}
+
+.bottomrow {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 2.2em;
+}
+
+small {
+    color: white;
+}
+/* Modal Science Begins*/
+
+
+
+.wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 4em;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #585858;
+}
+
+
+.wrapper:hover:after {
+    color: white;
+    content: "Add to Cart!";
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal__content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+}
+
+.modal__content p {
+}
+
+.inmodal {
+    float: left;
+}
+.modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+}
+
+.modal__content h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tagline {
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.modal__description {
+    padding-bottom: 20px;
+}
+
+.modal__content button {
+    text-decoration: none;
+    margin-top: 4em;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #585858;
+}
+/* All Key Frame Animations */
+
+@keyframes slideshow {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+@keyframes textcolor {
+    0% {
+        text-shadow: 4px 4px mediumpurple;
+    }
+
+    50% {
+        text-shadow: -4px -4px cadetblue;
+    }
+
+    100% {
+        text-shadow: 4px 4px mediumpurple;
+    }
+
+}
+@keyframes gradient {
+    0% {
+         background-image: linear-gradient(to bottom right, #144552, #00A0A3);
+        opacity: 0;
+    }
+    100% {
+        background-image: linear-gradient(to bottom right, #272640, #1B3A4B);
+        opacity: 1;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0.4;
+    }
+    5% {
+        opacity: 0.5;
+    }
+    10% {
+        opacity: 0.6;
+    }
+    15% {
+        opacity: 0.85;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 1;
+        filter: drop-shadow(1px 1px 4px white)
+    }
+    35% {
+        opacity: 0.1;
+    }
+    40% {
+        opacity: 0.25;
+    }
+    45% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.85;
+    }
+    80% {
+        opacity: 0.4;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* MEDIA QUERY*/
+
+@media (max-width: 100px) {
+    .topbar a {
+        flex-direction: column;
+        flex-flow: column;
+    }
+
+    header img {
+        display: none;
+    }
+}
