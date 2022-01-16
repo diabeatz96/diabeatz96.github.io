@@ -67,14 +67,12 @@ header {
 }
 
 header img {
-    width: 50%;
+    width: 10em;
+    padding-top: 2em;
     padding-left: 2em;
     animation: flicker 2s linear  reverse infinite;
+    align-items: flex-end;
 
-
-}
-
-header .logo {
 }
 
 
@@ -95,8 +93,7 @@ header h2 {
 }
 
 header .topbar {
-    display: flex;
-    flex-direction: row;
+    align-content: space-between;
     margin: auto;
 }
 
