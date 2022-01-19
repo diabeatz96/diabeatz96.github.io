@@ -12,7 +12,7 @@ let convertedCelsius = (fConverter - 32) * 5 / 9;
 
 
 console.log(`You're Input Celsius ${cConverter}°C is ${convertedFahrenheit.toFixed(1)}°F`)
-console.log(`You're Input Fahrenheit ${cConverter}°F is ${convertedCelsius.toFixed(1)}°C`)
+console.log(`You're Input Fahrenheit ${fConverter}°F is ${convertedCelsius.toFixed(1)}°C`)
 
 
 /** PART B HOMEWORK **/
