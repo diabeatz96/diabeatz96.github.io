@@ -41,9 +41,10 @@ document.querySelector("#changebg").onclick = function() {
       if(currentBackground === 4) {
          currentBackground = 0;
          document.querySelector("body").style.backgroundImage = `url('${backgroundArray[currentBackground]}')`;
-      }
-         document.querySelector("body").style.backgroundImage = `url('${backgroundArray[currentBackground]}')`;
+      } else {
          currentBackground++;
+         document.querySelector("body").style.backgroundImage = `url('${backgroundArray[currentBackground]}')`;
+      }
 }
 
 
@@ -61,6 +62,13 @@ document.querySelector("#submit_guess").onclick = function()
    if( x < 0 || x > 100) {
       document.querySelector("#score").innerHTML = `Please pick a number between 0 and 100`;
       return;
+   }
+
+   for(let number of historyArray) {
+      if(x === number) {
+         document.querySelector("#score").innerHTML = `You already picked that number.`;
+         return;
+      }
    }
 
    if (score == 0)
