@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+
+<!-- The HTML5 video element that will create the background video on the header -->
+
+<h1 class = "display-1 text-center text-white stroke">Welcome to the Guessing Game!</h1>
+
+<section class = "container-fluid">
+
+
+    <div class = "row justify-content-center">
+
+    <div class = "mt-5 col-md-6 alert alert-heading bg-warning bg-info border border-2">
+        <h2 class = "h2 text-center text-white stroke">Guess a number!</h2>
+
+        <div class="input-group">
+            <span class="input-group-text">Please Enter a Number</span>
+            <textarea class="form-control" aria-label="With textarea" id = "guess_field"></textarea>
+        </div>
+
+        <div style="text-align: center">
+        <button class = "col-md-3 btn-lg btn-success m-3 border border-3 border-white" id = "submit_guess">Click Me!</button>
+        </div>
+
+        <h3 class="alert alert-heading alert-danger text-white text-center stroke"><span id = "score"></span></h3>
+
+        <div class="card align-items-center">
+            <div class="card-body text-center">
+                <h5 class="card-title">Your Score History</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Previous Attempts Amount: </h6>
+                <ol><p class="card-text px-5"></p></ol>
+                <a href="https://www.youtube.com/watch?v=ud_frfkt1t0" class="card-link">How to get better</a>
+                <a href="https://www.excel-easy.com/examples/random-numbers.html" class="card-link">Random Excel Training</a>
+            </div>
+        </div>
+
+
+        <div class="btn-group mt-5 mb-lg-5" role = "group">
+            <div class = "">
+                <button class="btn btn-secondary" id = "reset">Reset</button>
+            </div>
+
+            <div class = "">
+                <button class="btn btn-primary" onclick="location.href='https://www.youtube.com/watch?v=JZevBhWU0nA'"  id = "iquit">I quit</button>
+            </div>
+
+            <div class = "">
+                <button class="btn btn-success" id = "changebg">Change BG</button>
+            </div>
+
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success pt-5" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    </div>
+
+
+</section>
+
+
+
+<script src = js/bootstrap.bundle.js></script>
+<script src = "js/guess.js"></script>
+
+</body>
+</html>
