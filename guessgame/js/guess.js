@@ -4,12 +4,15 @@ let y = Math.floor(Math.random() * 100 + 1);
 let guess = 1;
 let score = 10;
 const historyArray = [];
-const backgroundArray = ["images/bg1.gif", "images/bg2.jpg", "images/b3.jpg", "images/b4.jpg", "images/2825711.gif"];
+const backgroundArray = ["images/2825711.gif", "images/bg1.gif", "images/bg2.jpg", "images/b3.jpg", "images/b4.jpg"];
 let currentBackground = 0;
 let progressBar = document.querySelector(".progress-bar");
 
 document.querySelector("#score").innerHTML = `Type a number to get started`;
 
+if(currentBackground === 0) {
+   document.querySelector("body").style.backgroundImage = `url('${backgroundArray[currentBackground]}')`;
+}
 
 /**
  *
